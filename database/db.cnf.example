@@ -1,0 +1,8 @@
+[client]
+host = 127.0.0.1
+database = usermanagement
+user = root
+password = docker
+port = 3306
+name = usermanagement
+default-character-set = utf8mb4
