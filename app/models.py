@@ -15,7 +15,6 @@ class Member(models.Model):
     name = models.CharField(max_length=255)
     birth_date = models.DateField()
     entry_code = models.IntegerField(unique=True)
-    membership = models.ForeignKey(Membership, on_delete=models.RESTRICT)
 
     def __str__(self):
         return self.name
