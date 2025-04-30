@@ -9,6 +9,7 @@ urlpatterns = [
     path("member/<int:pk>", views.MemberDetail.as_view()),
     path("status/", views.MembershipStatusList.as_view()),
     path("status/<int:pk>", views.MembershipStatusDetail.as_view()),
+    path("entry/<int:entry_code>", views.ValidateMembershipView.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

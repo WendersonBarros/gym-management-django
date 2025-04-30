@@ -18,4 +18,4 @@ class MembershipStatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = Membership_status
         fields = "__all__"
-        read_only_fields = ['expiration_date']
+        read_only_fields = ["expiration_date", "last_membership_renewal"]

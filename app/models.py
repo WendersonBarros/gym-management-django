@@ -21,6 +21,7 @@ class Member(models.Model):
 
 
 class Membership_status(models.Model):
-    user = models.ForeignKey(Member, on_delete=models.CASCADE)
+    user = models.ForeignKey(Member, on_delete=models.CASCADE, unique=True)
     current_membership = models.ForeignKey(Membership, on_delete=models.RESTRICT)
     expiration_date = models.DateField()
+    last_membership_renewal = models.DateField()
